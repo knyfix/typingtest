@@ -8,27 +8,9 @@
 <body>
 <h1>Typing Test</h1>
 
-<input type="hidden" id="sampleText1" value="IT was late in the evening when K. arrived, The village was J. deep in snow. The Castle
-hill was hidden, veiled in mist and darkness, nor was there even a glimmer of light to
-show that a castle was there. On the wooden bridge leading from the main road to the
-village K. stood for a long time gazing into the illusory emptiness above him. Then he
-went on to find quarters for the night. The inn was still awake, and although the
-landlord could not provide a room and was upset by such a late and unexpected arrival, he
-was willing to let K. sleep on a bag of straw in the parlour. K. accepted the offer. Some
-peasants were still sitting over their beer, but he did not want to talk, and after
-himself fetching the bag of straw from the attic, lay down beside the stove. It was a
-warm corner, the peasants were quiet, and letting his weary eyes stray over them he soon
-fell asleep. But very shortly he was awakened. A young man dressed like a townsman, with
-the face of an actor, his eyes narrow and his eyebrows strongly marked, was standing
-beside him along with the landlord. The peasants were still in the room, and a few had
-turned their chairs round so as to see and hear better. The young man apologized very
-courteously for having awakened K., introducing himself as the son of the Castellan, and
-then said:
-&quot;This village belongs to the Castle, and whoever lives here or passes the night here
-does so in a manner of speaking in the Castle itself. Nobody may do that without the
-Count's permission. But you have no such permit, or at least you have produced none.&quot;
-K. had half raised himself and now, smoothing down his hair and looking up at the two
-men, he said:
+<input type="hidden" id="sampleText1" value="IT was late in the evening when K. arrived, The village was J. deep in snow. The Castle hill was hidden, veiled in mist and darkness, nor was there even a glimmer of light to show that a castle was there. On the wooden bridge leading from the main road to the village K. stood for a long time gazing into the illusory emptiness above him. Then he went on to find quarters for the night. The inn was still awake, and although the landlord could not provide a room and was upset by such a late and unexpected arrival, he was willing to let K. sleep on a bag of straw in the parlour. K. accepted the offer. Some peasants were still sitting over their beer, but he did not want to talk, and after himself fetching the bag of straw from the attic, lay down beside the stove. It was a warm corner, the peasants were quiet, and letting his weary eyes stray over them he soon fell asleep. But very shortly he was awakened. A young man dressed like a townsman, with the face of an actor, his eyes narrow and his eyebrows strongly marked, was standing beside him along with the landlord. The peasants were still in the room, and a few had turned their chairs round so as to see and hear better. The young man apologized very courteously for having awakened K., introducing himself as the son of the Castellan, and then said:
+&quot;This village belongs to the Castle, and whoever lives here or passes the night here does so in a manner of speaking in the Castle itself. Nobody may do that without the Count's permission. But you have no such permit, or at least you have produced none.&quot;
+K. had half raised himself and now, smoothing down his hair and looking up at the two men, he said:
 &quot;What village is this I have wandered into? Is there a castle here?&quot;
 &quot;Most certainly,&quot; replied the young man slowly">
 <input type="hidden" id="sampleText2" value="Yamaha launched the YZF-R1 after redesigning the Genesis engine to create a more compact engine by raising the gearbox input shaft and allowing the gearbox output shaft to be placed beneath it. This design feature was revolutionary, called a 'stacked gearbox', it has set a precedent for other manufacturers to follow. This &quot;compacting&quot; of the engine made the total engine length much shorter overall, thereby, allowing the wheelbase of the motorcycle to be shortened significantly. This, in turn, allowed the frame design to place the weight of the engine in the frame to aid handling because of an optimized center of gravity. The swingarm was able to be made longer without compromising the overall wheelbase, which was a short 1385mm. Four 40mm Kehin CV carburetors fed fuel to the engine; 140 bhp was claimed by the factory. USD 41mm front forks supplied by KYB mounted 300mm semi-floating disk brakes. The instrument panel was electrical with a self diagnosis system and digital speed readout. The exhaust system utilized an EXUP valve, which controlled the exhaust gas flow to maximize engine power production at all revs. This created a high powered and high torque engine. The Yamaha YZF-R6 was introduced in 1999 as the 600 cc version of the R1 super bike.">
@@ -36,13 +18,16 @@ men, he said:
 Let's just keep the fact aside and see what Twitterati has to say about this. A moment after the screenwriter made the comment, trollers got into the action with a series of spoofs and memes arrayed in line. The hashtag #JackSparrowIsKrishna started trending on Twitter and we have to admit that whatever it was carrying along was way too hilarious.">
 
 <div id="launcher">
+	<p>
+		On this page, you can take a typing test. Select the desired test duration and text sample, and click &quot;Start Test&quot; to begin.
+	</p>
 	<select id="testDuration">
 		<option value="0">Test Duration:</option>
-		<option value="1">1 minute</option>
-		<option value="2">2 minutes</option>
-		<option value="3">3 minutes</option>
-		<option value="4">4 minutes</option>
-		<option value="5">5 minutes</option>
+		<option value="60">1 minute</option>
+		<option value="120">2 minutes</option>
+		<option value="180">3 minutes</option>
+		<option value="240">4 minutes</option>
+		<option value="300">5 minutes</option>
 	</select>
 	<select id="textSample">
 		<option value="0">Text Sample:</option>
@@ -55,13 +40,13 @@ Let's just keep the fact aside and see what Twitterati has to say about this. A 
 <div id="tester">
 	Sample Text:
 	<textarea id="sampleText"></textarea>
-	<input type="text" id="timeLeftGauge" value=""/>
+	<input type="text" id="messageGauge" value=""/>
 	<textarea id="typedText"></textarea>
 	<textarea id="testResults"></textarea>
-	<input type="button" value="Pause Test" onclick="pauseTest()"/>
-	<input type="button" value="Unpause Test" onclick="unpauseTest()"/>
-	<input type="button" value="Stop Test" onclick="stopTest()"/>
-	<input type="button" value="Re-Take Test" onclick="retakeTest()"/>
+	<input type="button" id="pauseTest" value="Pause Test" onclick="pauseTest()"/>
+	<input type="button" id="unpauseTest" value="Unpause Test" onclick="unpauseTest()"/>
+	<input type="button" id="stopTest" value="Stop Test" onclick="stopTest()"/>
+	<input type="button" id="retakeTest" value="Re-Take Test" onclick="retakeTest()"/>
 </div>
 </body>
 </html>

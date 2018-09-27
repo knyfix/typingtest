@@ -1,3 +1,11 @@
-h1		{display:none}
-#launcher	{display:block}
-#tester		{display:none}
+html,body	{text-align:center; width:700px; margin:0 auto; padding:0 auto; font-family:Arial;}
+input,select,textarea
+		{width:600px; font-size:17px; border:1px solid #333; margin:10px}
+#launcher	{display:block; width:700px}
+#launcher p	{width:600px; margin:10px auto;}
+#tester		{display:none; width:700px}
+#sampleText	{height:350px;}
+#messageGauge	{border:0 none; font-size:36px; text-align:center;}
+#testResults	{border:0 none; height:60px}
+#retakeTest,#pauseTest,#unpauseTest,#stopTest
+		{display:none}
